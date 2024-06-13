@@ -1,17 +1,17 @@
-const alertStyles = {
-  margin: 8,
-  padding: "12px 16px",
-  borderRadius: 4,
-  backgroundColor: "gray",
-  color: "white",
-};
+import userData from "./userData.json"
+import Profile from "../src/components/Profile/Profile";
 
-export const App = () => {
+
+const App = () => {
   return (
     <>
-      <p style={alertStyles}>Please update your email!</p>
-      <p style={alertStyles}>There was an error during transaction!</p>
-      <p style={alertStyles}>Payment received, thank you for your purchase!</p>
+      <Profile
+        name={userData.username}
+        tag={userData.tag}
+        location={userData.location}
+        image={userData.avatar}
+        stats={userData.stats}
+      />
     </>
   );
 };
