@@ -1,0 +1,24 @@
+.friendList {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 720px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.friendListItem {
+  border: 2px solid black;
+  border-radius: 6px;
+  width: 100px;
+  padding: 8px;
+  background-color: white;
+  transition: transform 250ms ease-in-out, opacity 200ms ease-in,
+    background-color 300ms ease-out;
+}
+
+.friendListItem:hover {
+  background-color: rgb(169, 247, 222);
+  transform: scale(1.32);
+  opacity: 0.8;
+  cursor: pointer;
+}
